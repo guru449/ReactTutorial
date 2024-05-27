@@ -1,23 +1,58 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Greet from './components/greet';
+import Welcome  from './components/welcome';
+import Hello from './components/hello';
+import Message from './message';
+import Counter from './counter';
+import FunctionClick from './components/functionClick';
+import ClassClick from './classClick';
+import EventBind from './eventbind';
+import ParentComponent from './ParentComponent';
+import UserGreeting from './UserGreeting';
+import NewList from './NewList';
+import StyledSheets from './StyledSheets';
+import Inline from './Inline';
+import './appStyles.css'
+import styles from './appStyles.module.css'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='success'> Success</h1>
+      <h1 className={styles.error}> Failure</h1>
+      <Inline/>
+      {/* <StyledSheets/> */}
+      
+      {/* <NewList></NewList> */}
+      {/* <UserGreeting></UserGreeting> */}
+      {/* <ParentComponent>
+      </ParentComponent> */}
+      {/* <EventBind>
+
+      </EventBind> */}
+      {/* <FunctionClick>
+
+      </FunctionClick>
+      <ClassClick>
+
+      </ClassClick> */}
+      {/* <Counter></Counter> */}
+      {/* <Message>
+      </Message> */}
+      {/* <Greet name="Tony Stark" hero="Iron Man">
+        <p> I am Iron Man</p>
+      </Greet> */}
+
+      {/* <Greet name="Tom Cruise" hero="Mission Impossible">
+        <button> Diffuse Bomb</button>
+      </Greet>
+      <Welcome name="Tony Stark" hero="Iron Man">
+        <p> I am Iron Man</p>
+      </Welcome > */}
+      {/* <Welcome name="Tom Cruise" hero="Mission Impossible">
+        <button> Diffuse Bomb</button>
+      </Welcome> */}
+
     </div>
   );
 }
