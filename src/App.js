@@ -65,15 +65,21 @@
 
 
 
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import LifeCycleA from './LifeCycleA'
+import FragmentDemo from './FragmentDemo'
+import Table from './Table'
+import ParentComp from './ParentComp'
 
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <LifeCycleA></LifeCycleA>
+        <ParentComp></ParentComp>
+      {/* <Table ></Table> */}
+        {/* <FragmentDemo></FragmentDemo> */}
+        {/* <LifeCycleA></LifeCycleA> */}
       </div>
     )
   }
