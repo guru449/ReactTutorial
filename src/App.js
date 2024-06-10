@@ -72,13 +72,15 @@ import Table from './Table'
 import ParentComp from './ParentComp'
 import RefsDemo from './RefsDemo'
 import FocusComponent from './FocusComponent'
+import FRParent from './FRParent'
 
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <FocusComponent></FocusComponent>
+        <FRParent></FRParent>
+        {/* <FocusComponent></FocusComponent> */}
         {/* <RefsDemo></RefsDemo> */}
         {/* <ParentComp></ParentComp> */}
       {/* <Table ></Table> */}
