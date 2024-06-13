@@ -75,13 +75,18 @@ import FocusComponent from './FocusComponent'
 import FRParent from './FRParent'
 import Hero from './Hero'
 import ErrorBoundary from './ErrorBoundary'
+import ClickCounter from './ClickCounter'
+import HoverCounter from './HoverCounter'
 
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <ErrorBoundary>
+        <HoverCounter></HoverCounter>
+        {/* <ClickCounter>
+        </ClickCounter> */}
+        {/* <ErrorBoundary>
         <Hero heroName="batman"></Hero>
         </ErrorBoundary>
         <ErrorBoundary>
@@ -89,7 +94,7 @@ export class App extends Component {
         </ErrorBoundary>
         <ErrorBoundary>
         <Hero heroName="joker"></Hero>
-        </ErrorBoundary>
+        </ErrorBoundary> */}
         {/* <FRParent></FRParent> */}
         {/* <FocusComponent></FocusComponent> */}
         {/* <RefsDemo></RefsDemo> */}
