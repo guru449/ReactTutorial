@@ -83,7 +83,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <HoverCounter></HoverCounter>
+        <HoverCounter name="guru"></HoverCounter>
         <ClickCounter>
         </ClickCounter>
         {/* <ErrorBoundary>
