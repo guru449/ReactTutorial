@@ -84,8 +84,8 @@ export class App extends Component {
     return (
       <div>
         <HoverCounter></HoverCounter>
-        {/* <ClickCounter>
-        </ClickCounter> */}
+        <ClickCounter>
+        </ClickCounter>
         {/* <ErrorBoundary>
         <Hero heroName="batman"></Hero>
         </ErrorBoundary>
