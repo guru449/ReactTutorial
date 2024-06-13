@@ -73,13 +73,24 @@ import ParentComp from './ParentComp'
 import RefsDemo from './RefsDemo'
 import FocusComponent from './FocusComponent'
 import FRParent from './FRParent'
+import Hero from './Hero'
+import ErrorBoundary from './ErrorBoundary'
 
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <FRParent></FRParent>
+        <ErrorBoundary>
+        <Hero heroName="batman"></Hero>
+        </ErrorBoundary>
+        <ErrorBoundary>
+        <Hero heroName="superman"></Hero>
+        </ErrorBoundary>
+        <ErrorBoundary>
+        <Hero heroName="joker"></Hero>
+        </ErrorBoundary>
+        {/* <FRParent></FRParent> */}
         {/* <FocusComponent></FocusComponent> */}
         {/* <RefsDemo></RefsDemo> */}
         {/* <ParentComp></ParentComp> */}
